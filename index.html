@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Arte de la Pintura</title>
+    <!-- Fuente personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #FAD0C9, #FFE2D0);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-bottom: 3px solid #D55A6A;
+            background-color: #fff0f2;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #D55A6A;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .temas-lista a {
+            color: #D55A6A;
+        }
+
+        .temas-lista a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 3px solid #D55A6A;
+        }
+
+        footer {
+            background-color: #D55A6A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        aside::before {
+            content: "🎨";
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            font-size: 24px;
+        }
+
+        .author-info span {
+            font-weight: bold;
+            color: #D55A6A;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explorando el Arte de la Pintura</h1>
+</header>
+
+<!-- NAVBAR Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #D55A6A;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#definicion">¿Qué es la Pintura?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#autor">Autor</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL CON BOOTSTRAP -->
+<main class="container py-5">
+
+    <!-- Sección Definición -->
+    <section id="definicion" class="mb-5">
+        <div class="card border-danger-subtle">
+            <div class="card-body">
+                <h2 class="card-title">¿Qué es el Arte de la Pintura?</h2>
+                <p class="card-text">La pintura es una forma de expresión artística que utiliza pigmentos aplicados sobre una superficie para crear imágenes, composiciones y mensajes visuales.</p>
+                <p>Desde las pinturas rupestres hasta el arte moderno, ha servido como medio para contar historias, expresar emociones y explorar la estética.</p>
+                <a href="https://es.wikipedia.org/wiki/Pintura" class="btn btn-outline-danger" target="_blank">Más en Wikipedia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Temas Relacionados -->
+    <section id="temas" class="mb-5">
+        <h2>Temas Relacionados</h2>
+        <ul class="list-group temas-lista">
+            <li class="list-group-item"><a href="https://es.wikipedia.org/wiki/Historia_del_arte" target="_blank">Historia del Arte</a></li>
+            <li class="list-group-item"><a href="https://es.wikipedia.org/wiki/T%C3%A9cnica_de_pintura" target="_blank">Técnicas de Pintura</a></li>
+            <li class="list-group-item"><a href="https://es.wikipedia.org/wiki/Pintores_famosos" target="_blank">Pintores Famosos</a></li>
+        </ul>
+    </section>
+
+    <!-- Sección Técnicas de Pintura con Tabla Bootstrap -->
+    <section id="tecnicas" class="mb-5">
+        <h2>Técnicas de Pintura</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center">
+                <thead class="table-danger">
+                    <tr>
+                        <th>Técnica</th>
+                        <th>Descripción</th>
+                        <th>Ejemplos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Óleo</td>
+                        <td>Alta profundidad de color, secado lento.</td>
+                        <td><a href="https://es.wikipedia.org/wiki/Leonardo_da_Vinci">Da Vinci</a></td>
+                    </tr>
+                    <tr>
+                        <td>Acuarela</td>
+                        <td>Transparente, ideal para paisajes.</td>
+                        <td><a href="https://es.wikipedia.org/wiki/Winslow_Homer">Homer</a></td>
+                    </tr>
+                    <tr>
+                        <td>Acrílico</td>
+                        <td>Secado rápido, versátil.</td>
+                        <td><a href="https://es.wikipedia.org/wiki/Mark_Rothko">Rothko</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="mb-5">
+        <div class="bg-white p-4 rounded border">
+            <h2>Historia del Arte de la Pintura</h2>
+            <p>Desde cuevas hasta museos, la pintura ha sido fundamental para comunicar pensamientos e ideas. Evolucionó con movimientos como el Renacimiento, Barroco, Impresionismo y Modernismo.</p>
+        </div>
+    </section>
+
+    <!-- Sección Autor -->
+    <section id="autor" class="mb-5">
+        <aside class="bg-white p-4 rounded shadow text-center position-relative">
+            <h2>Sobre el Autor</h2>
+            <img src="https://via.placeholder.com/180" alt="Foto del Autor">
+            <div class="author-info mt-3">
+                <p><span>Autor:</span> María Dahiana Toro Sarmiento</p>
+                <p><span>Correo:</span> panacotta.info@gmail.com</p>
+                <p><span>Institución:</span> Skolmi</p>
+            </div>
+        </aside>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Explorando el Arte de la Pintura. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
